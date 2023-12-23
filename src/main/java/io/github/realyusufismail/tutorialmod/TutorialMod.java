@@ -1,5 +1,7 @@
 package io.github.realyusufismail.tutorialmod;
 
+import io.github.realyusufismail.tutorialmod.core.init.ItemInit;
+import io.github.realyusufismail.tutorialmod.data.DataGenerators;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModList;
 import net.neoforged.fml.common.Mod;
@@ -14,6 +16,11 @@ public class TutorialMod {
     public static Logger logger = LoggerFactory.getLogger(TutorialMod.class);
 
     public TutorialMod(IEventBus bus) {
+        // register
+        ItemInit.ITEMS.register(bus);
+
+        // listeners
+        bus.addListener(DataGenerators::gatherData);
 
         FMLJavaModLoadingContext.get().getModEventBus().addListener(FMLClientSetupEvent.class, (fmlClientSetupEvent -> {
             fmlClientSetupEvent.enqueueWork(() -> {
