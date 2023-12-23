@@ -2,6 +2,8 @@ package io.github.realyusufismail.tutorialmod.data;
 
 import io.github.realyusufismail.tutorialmod.TutorialMod;
 import io.github.realyusufismail.tutorialmod.data.lang.ModEnLangProvider;
+import io.github.realyusufismail.tutorialmod.data.lootable.ModLootTables;
+import io.github.realyusufismail.tutorialmod.data.texture.ModBlockStateProvider;
 import io.github.realyusufismail.tutorialmod.data.texture.ModItemStateProvider;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -18,6 +20,8 @@ public class DataGenerators {
 
             generator.addProvider(true, new ModEnLangProvider(output));
             generator.addProvider(true, new ModItemStateProvider(output, existingFileHelper));
+            generator.addProvider(true, new ModBlockStateProvider(output, existingFileHelper));
+            generator.addProvider(true, new ModLootTables(output));
         } catch (RuntimeException e) {
             TutorialMod.logger.error("Failed to generate data", e);
         }
