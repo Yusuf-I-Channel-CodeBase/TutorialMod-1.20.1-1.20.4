@@ -1,6 +1,7 @@
 package io.github.realyusufismail.tutorialmod;
 
 import io.github.realyusufismail.tutorialmod.core.init.BlockInit;
+import io.github.realyusufismail.tutorialmod.core.init.CreativeModeTabInit;
 import io.github.realyusufismail.tutorialmod.core.init.ItemInit;
 import io.github.realyusufismail.tutorialmod.data.DataGenerators;
 import net.neoforged.bus.api.IEventBus;
@@ -20,6 +21,7 @@ public class TutorialMod {
         // register
         ItemInit.ITEMS.register(bus);
         BlockInit.BLOCKS.register(bus);
+        CreativeModeTabInit.CREATIVE_MODE_TABS.register(bus);
 
         // listeners
         bus.addListener(DataGenerators::gatherData);

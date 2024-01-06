@@ -1,4 +1,5 @@
 {
   "block.tutorialmod.example_block": "Example Block",
+  "creativetab.tutorialmod": "Tutorial Mod",
   "item.tutorialmod.example_item": "Example Item"
 }
