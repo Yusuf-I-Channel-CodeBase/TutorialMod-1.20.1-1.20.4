@@ -1,6 +1,7 @@
 package io.github.realyusufismail.tutorialmod.data.recipe;
 
 import io.github.realyusufismail.tutorialmod.TutorialMod;
+import io.github.realyusufismail.tutorialmod.data.recipe.provider.FurnaceRecipeProvider;
 import io.github.realyusufismail.tutorialmod.data.recipe.provider.NormalCraftingTableRecipeProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
@@ -24,6 +25,7 @@ public class MainModRecipeProvider extends RecipeProvider {
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput) {
         new NormalCraftingTableRecipeProvider(generator, lookupProvider, recipeOutput).build();
+        new FurnaceRecipeProvider(generator, lookupProvider, recipeOutput).build();
     }
 
     public ResourceLocation getModId(String path) {
