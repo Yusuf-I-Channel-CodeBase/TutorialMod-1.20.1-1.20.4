@@ -2,9 +2,9 @@
   "type": "minecraft:blasting",
   "category": "misc",
   "cookingtime": 300,
-  "experience": 0.6,
+  "experience": 0.3,
   "ingredient": {
-    "item": "tutorialmod:example_block"
+    "item": "tutorialmod:raw_example"
   },
   "result": "tutorialmod:example_item"
 }

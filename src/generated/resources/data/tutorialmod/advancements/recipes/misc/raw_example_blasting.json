@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "tutorialmod:example_block"
+              "tutorialmod:raw_example"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "tutorialmod:example_block_blasting"
+        "recipe": "tutorialmod:raw_example_blasting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "tutorialmod:example_block_blasting"
+      "tutorialmod:raw_example_blasting"
     ]
   },
   "sends_telemetry_event": false

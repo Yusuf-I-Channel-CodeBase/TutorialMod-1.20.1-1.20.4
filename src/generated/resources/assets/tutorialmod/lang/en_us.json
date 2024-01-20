@@ -1,5 +1,8 @@
 {
+  "block.tutorialmod.deepslate_example_ore": "Deepslate Example Ore",
   "block.tutorialmod.example_block": "Example Block",
+  "block.tutorialmod.example_ore": "Example Ore",
   "creativetab.tutorialmod": "Tutorial Mod",
-  "item.tutorialmod.example_item": "Example Item"
+  "item.tutorialmod.example_item": "Example Item",
+  "item.tutorialmod.raw_example": "Raw Example"
 }

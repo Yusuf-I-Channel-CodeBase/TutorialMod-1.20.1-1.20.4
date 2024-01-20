@@ -21,12 +21,12 @@ public class FurnaceRecipeProvider extends MainModRecipeProvider {
     }
 
     public void build() {
-        SimpleCookingRecipeBuilder.smelting(Ingredient.of(BlockInit.EXAMPLE_BLOCK.get()), RecipeCategory.MISC, ItemInit.EXAMPLE_ITEM.get(), 0.6f, 300)
-                .unlockedBy("has_item", has(BlockInit.EXAMPLE_BLOCK.get()))
-                .save(output, getModId("example_block_smelting"));
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(ItemInit.RAW_EXAMPLE.get()), RecipeCategory.MISC, ItemInit.EXAMPLE_ITEM.get(), 0.6f, 300)
+                .unlockedBy("has_item", has(ItemInit.RAW_EXAMPLE.get()))
+                .save(output, getModId("raw_example_smelting"));
 
-        SimpleCookingRecipeBuilder.blasting(Ingredient.of(BlockInit.EXAMPLE_BLOCK.get()), RecipeCategory.MISC, ItemInit.EXAMPLE_ITEM.get(), 0.6f, 300)
-                .unlockedBy("has_item", has(BlockInit.EXAMPLE_BLOCK.get()))
-                .save(output, getModId("example_block_blasting"));
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(ItemInit.RAW_EXAMPLE.get()), RecipeCategory.MISC, ItemInit.EXAMPLE_ITEM.get(), 0.3f, 300)
+                .unlockedBy("has_item", has(ItemInit.RAW_EXAMPLE.get()))
+                .save(output, getModId("raw_example_blasting"));
     }
 }

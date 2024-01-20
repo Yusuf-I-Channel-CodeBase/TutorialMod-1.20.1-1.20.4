@@ -1,4 +1,10 @@
-// 1.20.2	2023-12-23T09:06:57.156928	Block States: tutorialmod
+// 1.20.2	2024-01-20T09:42:18.835786	Block States: tutorialmod
+dda480c6ef87c8ccc3b36e20d0294a037b6a0881 assets/tutorialmod/blockstates/deepslate_example_ore.json
 a3356530b08bd3cdb3b57c3040ae1d91cd093bb4 assets/tutorialmod/blockstates/example_block.json
+03c90ec2faf19c4828b297765e48c49809888da9 assets/tutorialmod/blockstates/example_ore.json
+fe94726c43158210ecb1c3ac8e1bc4b1ef7dd939 assets/tutorialmod/models/block/deepslate_example_ore.json
 1f63ade4fd62f4b546723d49dae685c065f07538 assets/tutorialmod/models/block/example_block.json
+5c66dd122380bbca40691b502726711e25e923b6 assets/tutorialmod/models/block/example_ore.json
+7e34b5999d3b9a3a586cd07b9d3abbecf8d4b3cc assets/tutorialmod/models/item/deepslate_example_ore.json
 a4ba5aef7c12629ab6a8ead3120151083d1f8627 assets/tutorialmod/models/item/example_block.json
+1408667875c176b552b3316d817c806dc50f2fdd assets/tutorialmod/models/item/example_ore.json

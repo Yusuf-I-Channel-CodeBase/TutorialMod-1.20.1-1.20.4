@@ -18,10 +18,13 @@ public class ModEnLangProvider extends LanguageProvider {
 
         // items
         addItem(ItemInit.EXAMPLE_ITEM, "Example Item");
+        addItem(ItemInit.RAW_EXAMPLE, "Raw Example");
 
 
         // blocks
         addBlock(BlockInit.EXAMPLE_BLOCK, "Example Block");
+        addBlock(BlockInit.EXAMPLE_ORE, "Example Ore");
+        addBlock(BlockInit.DEEPSLATE_EXAMPLE_ORE, "Deepslate Example Ore");
 
         // others
         add(CreativeModeTabInit.TUTORIAL_MOD_TAB_TITLE, "Tutorial Mod");

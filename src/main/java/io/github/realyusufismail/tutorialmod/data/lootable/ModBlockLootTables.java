@@ -2,6 +2,7 @@ package io.github.realyusufismail.tutorialmod.data.lootable;
 
 import io.github.realyusufismail.tutorialmod.TutorialMod;
 import io.github.realyusufismail.tutorialmod.core.init.BlockInit;
+import io.github.realyusufismail.tutorialmod.core.init.ItemInit;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlag;
@@ -22,6 +23,13 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
+
+        // normal ores
+        add(BlockInit.EXAMPLE_ORE.get(), createOreDrop(BlockInit.EXAMPLE_ORE.get(), ItemInit.RAW_EXAMPLE.get()));
+
+        // deepslate ores
+        add(BlockInit.DEEPSLATE_EXAMPLE_ORE.get(), createOreDrop(BlockInit.DEEPSLATE_EXAMPLE_ORE.get(), ItemInit.RAW_EXAMPLE.get()));
+
         dropSelf(BlockInit.EXAMPLE_BLOCK.get());
     }
 

@@ -15,6 +15,13 @@ public class BlockInit {
 
     public static final DeferredBlock<Block> EXAMPLE_BLOCK = registerBlock("example_block", () -> new Block(Block.Properties.copy(Blocks.STONE)));
 
+    // Normal ores - stops gen at y 0
+
+    public static final DeferredBlock<Block> EXAMPLE_ORE = registerBlock("example_ore", () -> new Block(Block.Properties.copy(Blocks.IRON_ORE)));
+
+    // Deepslate ores - starts gen at y 0
+    public static final DeferredBlock<Block> DEEPSLATE_EXAMPLE_ORE = registerBlock("deepslate_example_ore", () -> new Block(Block.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)));
+
 
     public static DeferredBlock<Block> registerBlock(
             String name, Supplier<Block> block) {

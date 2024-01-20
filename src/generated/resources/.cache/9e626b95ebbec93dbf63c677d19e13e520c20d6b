@@ -1,0 +1,6 @@
+// 1.20.2	2024-01-20T09:42:18.833225	Tags for minecraft:block mod id tutorialmod
+da2ee27128dcabd679c7a80668a17537bbce2482 data/forge/tags/blocks/deepslate_ores/example_ore.json
+c87ceab65e9fee9e7098e332e5c7bcbd3bfe6e86 data/forge/tags/blocks/ores/example_ore.json
+c83f9edda4547a4af3f0016fda0c2621839849b3 data/forge/tags/blocks/storage_blocks/example_block.json
+155db109f16b89eb19f46fd8f7dcf1fda23077ec data/minecraft/tags/blocks/mineable/pickaxe.json
+155db109f16b89eb19f46fd8f7dcf1fda23077ec data/minecraft/tags/blocks/needs_iron_tool.json
