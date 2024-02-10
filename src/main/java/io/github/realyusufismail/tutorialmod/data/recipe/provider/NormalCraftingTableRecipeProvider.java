@@ -7,7 +7,9 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
+import net.minecraft.data.recipes.ShapedRecipeBuilder;
 import net.minecraft.data.recipes.ShapelessRecipeBuilder;
+import net.minecraft.world.item.Items;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -28,5 +30,23 @@ public class NormalCraftingTableRecipeProvider extends MainModRecipeProvider {
                 .unlockedBy("has_item", has(ItemInit.EXAMPLE_ITEM.get()))
                 .save(output, getModId("example_item_block_recipe"));
 
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ItemInit.SWORD.get(), 1)
+                .pattern(" x ")
+                .pattern(" x ")
+                .pattern(" s ")
+                .define('s', Items.STICK)
+                .define('x', ItemInit.EXAMPLE_ITEM.get())
+                .unlockedBy("has_item", has(ItemInit.EXAMPLE_ITEM.get()))
+                .save(output, getModId("example_item_sword_recipe"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ItemInit.PICKAXE.get(), 1)
+                .pattern("xxx")
+                .pattern(" s ")
+                .pattern(" s ")
+                .define('x', ItemInit.EXAMPLE_ITEM.get())
+                .define('s', Items.STICK)
+                .unlockedBy("has_item", has(ItemInit.EXAMPLE_ITEM.get()))
+                .save(output, getModId("example_item_pickaxe_recipe"));
     }
 }

@@ -1,7 +1,11 @@
-// 1.20.2	2024-01-20T09:42:18.831065	Recipes
+// 1.20.2	2024-02-10T09:33:45.347917	Recipes
 4709d65fe4ca19b948b52a48add773e0da5a29ca data/tutorialmod/advancements/recipes/building_blocks/example_item_block_recipe.json
 0ec04c1975cb8f646590d74cc2c96f13a0fd4b37 data/tutorialmod/advancements/recipes/misc/raw_example_blasting.json
 d5a71017f0720267616277dffa8642c70b89e1c3 data/tutorialmod/advancements/recipes/misc/raw_example_smelting.json
+237d83e0c67c8ef9d76c01f091ce33c57c0aaa74 data/tutorialmod/advancements/recipes/tools/example_item_pickaxe_recipe.json
+2beada754c6fd04ca4a2642c63c7296d99546775 data/tutorialmod/advancements/recipes/tools/example_item_sword_recipe.json
 2aae4d5c4cee45364181624aab91ae2bea8ca39d data/tutorialmod/recipes/example_item_block_recipe.json
+d1a20c388a65bf2fce1936eb07b3c3f381931149 data/tutorialmod/recipes/example_item_pickaxe_recipe.json
+d17adde0cd0b6282c4ee0711ea17de98982929b6 data/tutorialmod/recipes/example_item_sword_recipe.json
 2d55fa6b705fd713bb21837020f810147c1a0b93 data/tutorialmod/recipes/raw_example_blasting.json
 8c8737a400ac53b380bf36aba81acba346272b41 data/tutorialmod/recipes/raw_example_smelting.json

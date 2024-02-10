@@ -26,6 +26,10 @@ public class ModEnLangProvider extends LanguageProvider {
         addBlock(BlockInit.EXAMPLE_ORE, "Example Ore");
         addBlock(BlockInit.DEEPSLATE_EXAMPLE_ORE, "Deepslate Example Ore");
 
+        // tools
+        addItem(ItemInit.SWORD, "Sword");
+        addItem(ItemInit.PICKAXE, "Pickaxe");
+
         // others
         add(CreativeModeTabInit.TUTORIAL_MOD_TAB_TITLE, "Tutorial Mod");
     }

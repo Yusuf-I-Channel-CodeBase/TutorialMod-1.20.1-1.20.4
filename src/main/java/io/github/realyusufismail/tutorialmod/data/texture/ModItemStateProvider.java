@@ -17,6 +17,10 @@ public class ModItemStateProvider extends ItemModelProvider {
     protected void registerModels() {
         item(ItemInit.EXAMPLE_ITEM.get());
         item(ItemInit.RAW_EXAMPLE.get());
+
+        // tools
+        tool(ItemInit.SWORD.get());
+        tool(ItemInit.PICKAXE.get());
     }
 
 
@@ -24,6 +28,13 @@ public class ModItemStateProvider extends ItemModelProvider {
         String name = NameUtility.getItemName(item);
         getBuilder(name)
             .parent(getExistingFile(mcLoc("item/generated")))
+            .texture("layer0", "item/" + name);
+    }
+
+    private void tool(Item item) {
+        String name = NameUtility.getItemName(item);
+        getBuilder(name)
+            .parent(getExistingFile(mcLoc("item/handheld")))
             .texture("layer0", "item/" + name);
     }
 }

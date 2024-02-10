@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "s": {
+      "item": "minecraft:stick"
+    },
+    "x": {
+      "item": "tutorialmod:example_item"
+    }
+  },
+  "pattern": [
+    " x ",
+    " x ",
+    " s "
+  ],
+  "result": {
+    "item": "tutorialmod:sword"
+  },
+  "show_notification": true
+}

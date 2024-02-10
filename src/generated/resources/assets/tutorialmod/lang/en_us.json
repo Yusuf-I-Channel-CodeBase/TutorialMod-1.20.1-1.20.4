@@ -4,5 +4,7 @@
   "block.tutorialmod.example_ore": "Example Ore",
   "creativetab.tutorialmod": "Tutorial Mod",
   "item.tutorialmod.example_item": "Example Item",
-  "item.tutorialmod.raw_example": "Raw Example"
+  "item.tutorialmod.pickaxe": "Pickaxe",
+  "item.tutorialmod.raw_example": "Raw Example",
+  "item.tutorialmod.sword": "Sword"
 }
