@@ -8,7 +8,6 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModList;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
-import net.neoforged.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -26,7 +25,7 @@ public class TutorialMod {
         // listeners
         bus.addListener(DataGenerators::gatherData);
 
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(FMLClientSetupEvent.class, (fmlClientSetupEvent -> {
+        bus.addListener(FMLClientSetupEvent.class, (fmlClientSetupEvent -> {
             fmlClientSetupEvent.enqueueWork(() -> {
                 ModList.get().getModContainerById(MOD_ID).ifPresent(modContainer -> {
                     logger.info("Loaded {}, using version {}", modContainer.getModInfo().getDisplayName(), modContainer.getModInfo().getVersion());

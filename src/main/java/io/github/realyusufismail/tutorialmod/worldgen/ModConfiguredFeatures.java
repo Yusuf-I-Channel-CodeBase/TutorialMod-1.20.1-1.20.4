@@ -37,6 +37,6 @@ public class ModConfiguredFeatures {
     }
 
     private static <FC extends FeatureConfiguration, F extends Feature<FC>> void register(BootstapContext<ConfiguredFeature<?, ?>> context, ResourceKey<ConfiguredFeature<?,?>> key, F feature, FC config) {
-        context.register(key, new ConfiguredFeature(feature, config));
+        context.register(key, new ConfiguredFeature<>(feature, config));
     }
 }

@@ -13,19 +13,17 @@ import java.util.concurrent.CompletableFuture;
 
 public class MainModRecipeProvider extends RecipeProvider {
     protected final DataGenerator generator;
-    protected final CompletableFuture<HolderLookup.Provider> lookupProvider;
 
-    public MainModRecipeProvider(DataGenerator generator, CompletableFuture<HolderLookup.Provider> lookupProvider) {
-        super(generator.getPackOutput(), lookupProvider);
+    public MainModRecipeProvider(DataGenerator generator) {
+        super(generator.getPackOutput());
         this.generator = generator;
-        this.lookupProvider = lookupProvider;
     }
 
 
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput) {
-        new NormalCraftingTableRecipeProvider(generator, lookupProvider, recipeOutput).build();
-        new FurnaceRecipeProvider(generator, lookupProvider, recipeOutput).build();
+        new NormalCraftingTableRecipeProvider(generator, recipeOutput).build();
+        new FurnaceRecipeProvider(generator, recipeOutput).build();
     }
 
     public ResourceLocation getModId(String path) {

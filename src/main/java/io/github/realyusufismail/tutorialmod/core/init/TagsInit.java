@@ -1,5 +1,6 @@
 package io.github.realyusufismail.tutorialmod.core.init;
 
+import io.github.realyusufismail.tutorialmod.TutorialMod;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
@@ -19,9 +20,15 @@ public class TagsInit {
         // For normal blocks - storage
         public static TagKey<Block> STORAGE_BLOCKS_EXAMPLE = BlockTags.create(createResourceLocation("storage_blocks/example_block"));
 
+        public static TagKey<Block> NEEDS_EXAMPLE = BlockTags.create(createCustomResourceLocation("needs_example"));
+
 
         private static ResourceLocation createResourceLocation(String name) {
             return new ResourceLocation("forge", name);
+        }
+
+        private static ResourceLocation createCustomResourceLocation(String name) {
+            return new ResourceLocation(TutorialMod.MOD_ID, name);
         }
     }
 

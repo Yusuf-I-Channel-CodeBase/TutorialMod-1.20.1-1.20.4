@@ -30,6 +30,5 @@
     "recipes": [
       "tutorialmod:raw_example_blasting"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

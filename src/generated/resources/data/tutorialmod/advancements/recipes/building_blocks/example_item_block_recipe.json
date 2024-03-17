@@ -30,6 +30,5 @@
     "recipes": [
       "tutorialmod:example_item_block_recipe"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

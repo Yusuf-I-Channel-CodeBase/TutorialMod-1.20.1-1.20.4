@@ -30,6 +30,5 @@
     "recipes": [
       "tutorialmod:raw_example_smelting"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }
