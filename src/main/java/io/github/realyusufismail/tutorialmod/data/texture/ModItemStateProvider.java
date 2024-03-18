@@ -18,6 +18,12 @@ public class ModItemStateProvider extends ItemModelProvider {
         item(ItemInit.EXAMPLE_ITEM.get());
         item(ItemInit.RAW_EXAMPLE.get());
 
+        // armour
+        item(ItemInit.HELMET.get());
+        item(ItemInit.CHESTPLATE.get());
+        item(ItemInit.LEGGINGS.get());
+        item(ItemInit.BOOTS.get());
+
         // tools
         tool(ItemInit.SWORD.get());
         tool(ItemInit.PICKAXE.get());
