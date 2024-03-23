@@ -48,5 +48,35 @@ public class NormalCraftingTableRecipeProvider extends MainModRecipeProvider {
                 .define('s', Items.STICK)
                 .unlockedBy("has_item", has(ItemInit.EXAMPLE_ITEM.get()))
                 .save(output, getModId("example_item_pickaxe_recipe"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ItemInit.HELMET.get(), 1)
+                .pattern("xxx")
+                .pattern("x x")
+                .define('x', ItemInit.EXAMPLE_ITEM.get())
+                .unlockedBy("has_item", has(ItemInit.EXAMPLE_ITEM.get()))
+                .save(output, getModId("example_item_helmet_recipe"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ItemInit.CHESTPLATE.get(), 1)
+                .pattern("x x")
+                .pattern("xxx")
+                .pattern("xxx")
+                .define('x', ItemInit.EXAMPLE_ITEM.get())
+                .unlockedBy("has_item", has(ItemInit.EXAMPLE_ITEM.get()))
+                .save(output, getModId("example_item_chestplate_recipe"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ItemInit.LEGGINGS.get(), 1)
+                .pattern("xxx")
+                .pattern("x x")
+                .pattern("x x")
+                .define('x', ItemInit.EXAMPLE_ITEM.get())
+                .unlockedBy("has_item", has(ItemInit.EXAMPLE_ITEM.get()))
+                .save(output, getModId("example_item_leggings_recipe"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ItemInit.BOOTS.get(), 1)
+                .pattern("x x")
+                .pattern("x x")
+                .define('x', ItemInit.EXAMPLE_ITEM.get())
+                .unlockedBy("has_item", has(ItemInit.EXAMPLE_ITEM.get()))
+                .save(output, getModId("example_item_boots_recipe"));
     }
 }

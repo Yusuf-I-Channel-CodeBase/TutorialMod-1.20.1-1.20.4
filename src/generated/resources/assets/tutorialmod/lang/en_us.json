@@ -3,7 +3,11 @@
   "block.tutorialmod.example_block": "Example Block",
   "block.tutorialmod.example_ore": "Example Ore",
   "creativetab.tutorialmod": "Tutorial Mod",
+  "item.tutorialmod.boots": "Boots",
+  "item.tutorialmod.chestplate": "Chestplate",
   "item.tutorialmod.example_item": "Example Item",
+  "item.tutorialmod.helmet": "Helmet",
+  "item.tutorialmod.leggings": "Leggings",
   "item.tutorialmod.pickaxe": "Pickaxe",
   "item.tutorialmod.raw_example": "Raw Example",
   "item.tutorialmod.sword": "Sword"
