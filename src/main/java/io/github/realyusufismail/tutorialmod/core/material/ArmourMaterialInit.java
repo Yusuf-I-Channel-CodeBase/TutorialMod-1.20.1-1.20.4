@@ -16,7 +16,12 @@ import java.util.function.Supplier;
 
 public enum ArmourMaterialInit implements ArmorMaterial, StringRepresentable {
     // can make custom sound next.
-    EXAMPLE("example", 15, Util.make(new EnumMap<>(ArmorItem.Type.class), p_266652_ -> {}), 15, SoundEvents.ARMOR_EQUIP_NETHERITE, 2.0F, 0.0F, () -> Ingredient.of(ItemInit.EXAMPLE_ITEM.get()));
+    EXAMPLE("example", 15, Util.make(new EnumMap<>(ArmorItem.Type.class), p_266652_ -> {
+        p_266652_.put(ArmorItem.Type.HELMET, 10);
+        p_266652_.put(ArmorItem.Type.CHESTPLATE, 10);
+        p_266652_.put(ArmorItem.Type.LEGGINGS, 10);
+        p_266652_.put(ArmorItem.Type.BOOTS, 10);
+    }), 15, SoundEvents.ARMOR_EQUIP_NETHERITE, 2.0F, 0.0F, () -> Ingredient.of(ItemInit.EXAMPLE_ITEM.get()));
     private final String name;
     private final int durabilityMultiplier;
     private final EnumMap<ArmorItem.Type, Integer> protectionFunctionForType;

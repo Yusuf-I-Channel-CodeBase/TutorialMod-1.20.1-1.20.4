@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "minecraft:golden_apple"
+    },
+    "x": {
+      "item": "minecraft:apple"
+    }
+  },
+  "pattern": [
+    "xxx",
+    "xax",
+    "xxx"
+  ],
+  "result": {
+    "item": "tutorialmod:healing_apple"
+  }
+}

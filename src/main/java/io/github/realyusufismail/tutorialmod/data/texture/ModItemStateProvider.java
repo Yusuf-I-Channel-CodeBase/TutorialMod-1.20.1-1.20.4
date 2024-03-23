@@ -17,6 +17,7 @@ public class ModItemStateProvider extends ItemModelProvider {
     protected void registerModels() {
         item(ItemInit.EXAMPLE_ITEM.get());
         item(ItemInit.RAW_EXAMPLE.get());
+        item(ItemInit.HEALING_APPLE.get());
 
         // armour
         item(ItemInit.HELMET.get());

@@ -19,6 +19,7 @@ public class ModEnLangProvider extends LanguageProvider {
         // items
         addItem(ItemInit.EXAMPLE_ITEM, "Example Item");
         addItem(ItemInit.RAW_EXAMPLE, "Raw Example");
+        addItem(ItemInit.HEALING_APPLE, "Healing apple");
 
 
         // blocks
@@ -29,6 +30,12 @@ public class ModEnLangProvider extends LanguageProvider {
         // tools
         addItem(ItemInit.SWORD, "Sword");
         addItem(ItemInit.PICKAXE, "Pickaxe");
+
+        //armour
+        addItem(ItemInit.HELMET, "Helmet");
+        addItem(ItemInit.CHESTPLATE, "Chestplate");
+        addItem(ItemInit.LEGGINGS, "Leggings");
+        addItem(ItemInit.BOOTS, "Boots");
 
         // others
         add(CreativeModeTabInit.TUTORIAL_MOD_TAB_TITLE, "Tutorial Mod");
