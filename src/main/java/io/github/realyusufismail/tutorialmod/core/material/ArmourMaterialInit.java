@@ -17,11 +17,12 @@ import java.util.function.Supplier;
 public enum ArmourMaterialInit implements ArmorMaterial, StringRepresentable {
     // can make custom sound next.
     EXAMPLE("example", 15, Util.make(new EnumMap<>(ArmorItem.Type.class), p_266652_ -> {
-        p_266652_.put(ArmorItem.Type.HELMET, 10);
-        p_266652_.put(ArmorItem.Type.CHESTPLATE, 10);
-        p_266652_.put(ArmorItem.Type.LEGGINGS, 10);
-        p_266652_.put(ArmorItem.Type.BOOTS, 10);
-    }), 15, SoundEvents.ARMOR_EQUIP_NETHERITE, 2.0F, 0.0F, () -> Ingredient.of(ItemInit.EXAMPLE_ITEM.get()));
+        // how strong the armor is. Diamond is 3, netherite is 8.
+        p_266652_.put(ArmorItem.Type.HELMET, 4);
+        p_266652_.put(ArmorItem.Type.CHESTPLATE, 4);
+        p_266652_.put(ArmorItem.Type.LEGGINGS, 4);
+        p_266652_.put(ArmorItem.Type.BOOTS, 4);
+    }), 15, SoundEvents.ARMOR_EQUIP_NETHERITE, 5.0F, 1.0F, () -> Ingredient.of(ItemInit.EXAMPLE_ITEM.get()));
     private final String name;
     private final int durabilityMultiplier;
     private final EnumMap<ArmorItem.Type, Integer> protectionFunctionForType;
@@ -53,12 +54,12 @@ public enum ArmourMaterialInit implements ArmorMaterial, StringRepresentable {
     }
 
     @Override
-    public int getDurabilityForType(ArmorItem.Type pType) {
+    public int getDurabilityForType(ArmorItem.@NotNull Type pType) {
         return HEALTH_FUNCTION_FOR_TYPE.get(pType) * this.durabilityMultiplier;
     }
 
     @Override
-    public int getDefenseForType(ArmorItem.Type pType) {
+    public int getDefenseForType(ArmorItem.@NotNull Type pType) {
         return this.protectionFunctionForType.get(pType);
     }
 
