@@ -24,11 +24,16 @@ public class ExampleArmour extends ArmorItem implements IItemExtension {
             ItemStack chestplate = player.getItemBySlot(EquipmentSlot.CHEST);
             ItemStack helmet = player.getItemBySlot(EquipmentSlot.HEAD);
 
+            // Check if the player already has flight enabled through another means
+            if (player.getAbilities().mayfly) return;
+
             if (player.isCreative() || player.isSpectator()) return;
 
             if (boots.getItem() instanceof ExampleArmour && leggings.getItem() instanceof ExampleArmour && chestplate.getItem() instanceof ExampleArmour && helmet.getItem() instanceof ExampleArmour) {
-               player.getAbilities().mayfly = true;
-               player.fallDistance = 0.0f;
+                player.getAbilities().mayfly = true;
+                player.fallDistance = 0.0f;
+            } else {
+                player.getAbilities().mayfly = false; // Turn off flight
             }
         }
     }
