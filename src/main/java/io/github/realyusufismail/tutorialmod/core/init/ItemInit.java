@@ -29,4 +29,6 @@ public class ItemInit {
     public static DeferredItem<Item> LEGGINGS = ITEMS.register("leggings", () -> new ExampleArmour(ArmorItem.Type.LEGGINGS));
 
     public static DeferredItem<Item> BOOTS = ITEMS.register("boots", () -> new ExampleArmour(ArmorItem.Type.BOOTS));
+
+    public static DeferredItem<Item> HEALING_APPLE = ITEMS.register("healing_apple", () -> new Item(new Item.Properties().food(FoodsInit.HEALING_APPLE)));
 }

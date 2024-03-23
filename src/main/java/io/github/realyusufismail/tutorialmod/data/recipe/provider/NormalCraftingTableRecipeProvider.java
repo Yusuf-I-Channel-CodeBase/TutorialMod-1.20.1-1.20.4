@@ -78,5 +78,14 @@ public class NormalCraftingTableRecipeProvider extends MainModRecipeProvider {
                 .define('x', ItemInit.EXAMPLE_ITEM.get())
                 .unlockedBy("has_item", has(ItemInit.EXAMPLE_ITEM.get()))
                 .save(output, getModId("example_item_boots_recipe"));
+
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ItemInit.HEALING_APPLE.get(), 1)
+                .pattern("xxx")
+                .pattern("xax")
+                .pattern("xxx")
+                .define('x', Items.APPLE)
+                .define('a', ItemInit.EXAMPLE_ITEM.get())
+                .unlockedBy("has_item", has(Items.GOLDEN_APPLE));
     }
 }

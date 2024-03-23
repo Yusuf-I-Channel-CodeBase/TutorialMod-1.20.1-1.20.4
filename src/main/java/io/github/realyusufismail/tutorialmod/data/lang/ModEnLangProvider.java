@@ -25,6 +25,7 @@ public class ModEnLangProvider extends LanguageProvider {
         addItem(ItemInit.LEGGINGS, "Leggings");
         addItem(ItemInit.BOOTS, "Boots");
 
+        addItem(ItemInit.HEALING_APPLE, "Healing Apple");
 
         // blocks
         addBlock(BlockInit.EXAMPLE_BLOCK, "Example Block");

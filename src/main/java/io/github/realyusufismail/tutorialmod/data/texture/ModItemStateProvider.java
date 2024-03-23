@@ -24,6 +24,8 @@ public class ModItemStateProvider extends ItemModelProvider {
         item(ItemInit.LEGGINGS.get());
         item(ItemInit.BOOTS.get());
 
+        item(ItemInit.HEALING_APPLE.get());
+
         // tools
         tool(ItemInit.SWORD.get());
         tool(ItemInit.PICKAXE.get());
