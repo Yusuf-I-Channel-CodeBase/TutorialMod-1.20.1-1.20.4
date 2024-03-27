@@ -1,6 +1,7 @@
 package io.github.realyusufismail.tutorialmod.data.world;
 
 import io.github.realyusufismail.tutorialmod.TutorialMod;
+import io.github.realyusufismail.tutorialmod.worldgen.ModBiomesModifiers;
 import io.github.realyusufismail.tutorialmod.worldgen.ModConfiguredFeatures;
 import io.github.realyusufismail.tutorialmod.worldgen.ModPlacedFeatures;
 import net.minecraft.core.HolderLookup;
@@ -9,6 +10,7 @@ import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.common.data.DatapackBuiltinEntriesProvider;
+import net.neoforged.neoforge.registries.NeoForgeRegistries;
 
 import java.util.List;
 import java.util.Set;
@@ -19,7 +21,8 @@ public class ModWorldGenProvider extends DatapackBuiltinEntriesProvider {
         super(output, registries,
                 new RegistrySetBuilder()
                                 .add(Registries.CONFIGURED_FEATURE, ModConfiguredFeatures::boostrap)
-                                .add(Registries.PLACED_FEATURE, ModPlacedFeatures::bootstrap),
+                                .add(Registries.PLACED_FEATURE, ModPlacedFeatures::bootstrap)
+                                .add(NeoForgeRegistries.Keys.BIOME_MODIFIERS, ModBiomesModifiers::bootstrap),
                 Set.of(TutorialMod.MOD_ID));
     }
 }
